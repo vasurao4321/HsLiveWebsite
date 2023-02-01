@@ -1,0 +1,32 @@
+.my-button{
+    background-color: #ff0000; /* red background */
+    border-radius: 50%; /* make the button circular */
+    width: 200px; /* set the width of the button */
+    height: 200px; /* set the height of the button */
+    /*overflow: hidden; hide any overflow from the image */
+    position: relative; /* set the position of the button */
+}
+
+.my-button:hover {
+    width: 300px; /* enlarge the button when hovered */
+    height: 300px; /* enlarge the button when hovered */
+}
+
+.my-button:active {
+    width: 350px; /* further enlarge the button when clicked */
+    height: 350px; /* further enlarge the button when clicked */
+}
+
+.my-button::before {
+    content: "bjbgbnojetneito"; /* add the title of the image */
+    position: absolute; /* position the title */
+    bottom: 10px; /* set the distance from the bottom */
+    left: 10px; /* set the distance from the left */
+    font-size: 20px; /* set the font size */
+    color: white; /* set the font color */
+    z-index: 1; /* set the z-index to display the title on top of the image */
+}
+
+.my-button:active::before {
+    display: block; /* display the title when the button is clicked */
+}
